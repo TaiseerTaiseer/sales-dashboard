@@ -44,8 +44,8 @@ def update_graph(selected_product):
     return fig
 
 # Run app
-if __name__ == "__main__":
-    app.run(debug=True)
+server = app.server
+
 
 
 
