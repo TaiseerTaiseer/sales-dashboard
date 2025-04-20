@@ -44,7 +44,14 @@ def update_graph(selected_product):
     return fig
 
 # Run app
-server = app.server
+app = dash.Dash(__name__)
+server = app.server  # Optional but safe
+
+# layout and callbacks go here...
+
+# ✅ DO NOT include: if __name__ == "__main__"
+# ✅ DO NOT include: app.run()
+
 
 
 
